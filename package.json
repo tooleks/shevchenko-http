@@ -1,0 +1,28 @@
+{
+  "name": "shevchenko-http",
+  "version": "0.0.0",
+  "description": "HTTP API for shevchenko library",
+  "main": "./server.js",
+  "scripts": {
+    "start": "node ./server.mjs",
+    "format": "prettier --write ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tooleks/shevchenko-http.git"
+  },
+  "author": "Oleksandr Tolochko <tooleks@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tooleks/shevchenko-http/issues"
+  },
+  "homepage": "https://github.com/tooleks/shevchenko-http#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "shevchenko": "^2.0.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

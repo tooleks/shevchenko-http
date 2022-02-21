@@ -1,0 +1,83 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+
+### Provides the application metadata.
+GET http://{{host}}
+
+### Inflects an anthroponym in nominative grammatical case.
+POST http://{{host}}/nominative
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
+
+### Inflects an anthroponym in genitive grammatical case.
+POST http://{{host}}/genitive
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
+
+### Inflects an anthroponym in dative grammatical case.
+POST http://{{host}}/dative
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
+
+### Inflects an anthroponym in accusative grammatical case.
+POST http://{{host}}/accusative
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
+
+### Inflects an anthroponym in ablative grammatical case.
+POST http://{{host}}/ablative
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
+
+### Inflects an anthroponym in locative grammatical case.
+POST http://{{host}}/locative
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
+
+### Inflects an anthroponym in vocative grammatical case.
+POST http://{{host}}/vocative
+Content-Type: application/json
+
+{
+    "gender": "male",
+    "firstName": "Тарас",
+    "middleName": "Григорович",
+    "lastName": "Шевченко"
+}
