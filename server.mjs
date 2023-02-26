@@ -19,10 +19,10 @@ app.get('/', async (req, res, err) => {
 /**
  * Inflects an anthroponym in nominative grammatical case.
  */
-app.post('/nominative', (req, res, next) => {
+app.post('/nominative', async (req, res, next) => {
   try {
-    const result = shevchenko.inNominative(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inNominative(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }
@@ -31,10 +31,10 @@ app.post('/nominative', (req, res, next) => {
 /**
  * Inflects an anthroponym in genitive grammatical case.
  */
-app.post('/genitive', (req, res, next) => {
+app.post('/genitive', async (req, res, next) => {
   try {
-    const result = shevchenko.inGenitive(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inGenitive(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }
@@ -43,10 +43,10 @@ app.post('/genitive', (req, res, next) => {
 /**
  * Inflects an anthroponym in dative grammatical case.
  */
-app.post('/dative', (req, res, next) => {
+app.post('/dative', async (req, res, next) => {
   try {
-    const result = shevchenko.inDative(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inDative(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }
@@ -55,10 +55,10 @@ app.post('/dative', (req, res, next) => {
 /**
  * Inflects an anthroponym in accusative grammatical case.
  */
-app.post('/accusative', (req, res, next) => {
+app.post('/accusative', async (req, res, next) => {
   try {
-    const result = shevchenko.inAccusative(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inAccusative(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }
@@ -67,10 +67,10 @@ app.post('/accusative', (req, res, next) => {
 /**
  * Inflects an anthroponym in ablative grammatical case.
  */
-app.post('/ablative', (req, res, next) => {
+app.post('/ablative', async (req, res, next) => {
   try {
-    const result = shevchenko.inAblative(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inAblative(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }
@@ -79,10 +79,10 @@ app.post('/ablative', (req, res, next) => {
 /**
  * Inflects an anthroponym in locative grammatical case.
  */
-app.post('/locative', (req, res, next) => {
+app.post('/locative', async (req, res, next) => {
   try {
-    const result = shevchenko.inLocative(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inLocative(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }
@@ -91,10 +91,10 @@ app.post('/locative', (req, res, next) => {
 /**
  * Inflects an anthroponym in vocative grammatical case.
  */
-app.post('/vocative', (req, res, next) => {
+app.post('/vocative', async (req, res, next) => {
   try {
-    const result = shevchenko.inVocative(req.body);
-    res.status(200).send(result);
+    const output = await shevchenko.inVocative(req.body);
+    res.status(200).send(output);
   } catch (err) {
     next(err);
   }

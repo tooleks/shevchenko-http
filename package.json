@@ -20,7 +20,7 @@
   "homepage": "https://github.com/tooleks/shevchenko-http#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "shevchenko": "^2.0.6"
+    "shevchenko": "^3.0.0"
   },
   "devDependencies": {
     "prettier": "^2.5.1"

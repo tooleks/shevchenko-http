@@ -1,6 +1,6 @@
 # shevchenko HTTP API
 
-This repository provides a standalone HTTP API for [Shevchenko JavaScript library](https://github.com/tooleks/shevchenko-js).
+This repository provides a standalone HTTP API for [shevchenko JavaScript library](https://github.com/tooleks/shevchenko-js).
 
 ## Requirements
 
@@ -26,10 +26,10 @@ POST http://localhost:3000/vocative
 Content-Type: application/json
 
 {
-    "gender": "male",
-    "firstName": "Тарас",
-    "middleName": "Григорович",
-    "lastName": "Шевченко"
+    "gender": "masculine",
+    "givenName": "Тарас",
+    "patronymicName": "Григорович",
+    "familyName": "Шевченко"
 }
 ```
 
@@ -37,10 +37,9 @@ HTTP response example:
 
 ```
 {
-    "gender": "male",
-    "firstName": "Тарасе",
-    "middleName": "Григоровичу",
-    "lastName": "Шевченку"
+    "givenName": "Тарасе",
+    "patronymicName": "Григоровичу",
+    "familyName": "Шевченку"
 }
 ```
 
