@@ -1,6 +1,6 @@
 # shevchenko HTTP API
 
-This repository provides a standalone HTTP API for [shevchenko JavaScript library](https://github.com/tooleks/shevchenko-js).
+This repository provides an example of HTTP API for [shevchenko](https://github.com/tooleks/shevchenko-js) library.
 
 ## Requirements
 
@@ -9,13 +9,13 @@ This repository provides a standalone HTTP API for [shevchenko JavaScript librar
 
 ## Installation
 
-Run the following command to start Docker container.
+To start Docker container, run the following command:
 
 ```sh
 docker-compose up
 ```
 
-Go to [http://localhost:3000](http://localhost:3000) to verify installation.
+Open [http://localhost:3000](http://localhost:3000) in a web browser to verify installation.
 
 ## Examples
 
