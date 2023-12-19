@@ -101,6 +101,23 @@ app.post('/vocative', async (req, res, next) => {
 });
 
 /**
+ * Inflects detectGender .
+ */
+app.post('/gender', async (req, res, next) => {
+  try {
+    
+    const output = await shevchenko.detectGender(req.body);
+    //в отриманий запит дописую поле gender. Результат можна одразу відправляти для відмінювання.
+    var data = req.body; 
+    data.gender = output;
+    res.status(200).send(data);
+  } catch (err) {
+    next(err);
+  }
+});
+
+
+/**
  *
  */
 app.use((err, req, res, next) => {
